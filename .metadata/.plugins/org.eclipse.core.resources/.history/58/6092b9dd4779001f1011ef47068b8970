@@ -1,0 +1,48 @@
+package beantest;
+
+import java.io.Serializable;
+
+/**
+ * Javabean 은 Java 프로그래밍에서 재 사용 가능한 소프트웨어 컨포턴트를 만들기 위한
+ * 규약을 따르는 클래스를 뜻함.
+ * Javabean 특징:
+ * 	1. 캡슐화 된 속성 : 모든 맴버 변수는 private 로 선언
+ * 					 이에 접근하기 위해서는 puvlic 접근자 (setter getter ) 메소드 제공
+ * 	2. 파라미터가 없는 기본 생성자 : public 으로 선언된 기본 생성자를 가져야함.
+ * 							   이는 객체 생성시 초기 설정을 가능하게함.
+ * 	3. 직렬화 기능 : Serializable  인터페이스를 구현하여 객체의 상태를 저장하거나 네트워크로 전송 할 수 있음
+ * 
+ * 
+ * 
+ */
+public class Person implements Serializable{
+	// ctrl+1 default 뭐시기 저시기
+	/**
+	 *  Java 에서 직렬화 기능 클래수ㅡ의 고유 식별자
+	 *  역 직렬화 시 발생 할 수 있는 오류 를 방지함
+	 * 	-- 권고 사항임
+	 */ 
+
+	
+	//1. 캡슐화 된 속성
+	private String name;
+	private int age;
+	//2. 기본 생성자
+	public Person() {}
+	//1.public 접근자
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	};
+	
+
+}

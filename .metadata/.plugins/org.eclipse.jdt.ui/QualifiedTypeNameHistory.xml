@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.awt.print.PrinterAbortException"/>
+    <fullyQualifiedTypeName name="javax.print.event.PrintServiceAttributeEvent"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.net.UnknownServiceException"/>
+    <fullyQualifiedTypeName name="jdbc.ConnectionFactory"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="jdbc.UserVO"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.jni.OS"/>
+    <fullyQualifiedTypeName name="jdbc.UserDAO"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.startup.ConnectorCreateRule"/>
+    <fullyQualifiedTypeName name="jdbc.UserService"/>
+    <fullyQualifiedTypeName name="jdbc.ConnectionPool"/>
+    <fullyQualifiedTypeName name="beantest.Person"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutput"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.filters.SetCharacterEncodingFilter"/>
+    <fullyQualifiedTypeName name="model.UserVO"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.User"/>
+    <fullyQualifiedTypeName name="model.UserService"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+</qualifiedTypeNameHistroy>

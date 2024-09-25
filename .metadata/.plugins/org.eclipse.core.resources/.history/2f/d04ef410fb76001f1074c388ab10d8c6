@@ -1,0 +1,50 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.apache.tomcat.jni.OS;
+
+
+public class UserDAO {
+
+	private static UserDAO instance = new UserDAO();
+	// 싱글톤 패턴
+	public static UserDAO getInstance() {
+		return instance;
+	}
+	private UserDAO() {};
+	
+	/**
+	 * @param conn
+	 * @param id
+	 * @return UserVO
+	 * 로그인 관련
+	 */
+	public UserVO loginUser(Connection conn , String id) throws SQLException{
+		StringBuffer query = new StringBuffer();
+		query.append(" SELECT user_id");
+		query.append("    , user_pw");
+		query.append("    , user_nm");
+		query.append(" FROM tb_user");
+		query.append(" WHERE user_id = ? ");
+		query.append(" AND	 use_yn ='Y' ");
+		PreparedStatement ps = conn.prepareStatement(query,toString());
+		ps.setString(1, id);
+		ResultSet rs = ps.executeQuery();
+		UserVO vo = new UserVO();
+		while(rs.next()) {
+			vo.setUserId(rs.getString("user_id"));
+			vo.setUserId(rs.getString("user_pw"));
+			vo.setUserId(rs.getString("user_nm"));
+		}
+		if (ps!=null) ps.close();
+		if (rs!=null) rs.close();
+		return vo;
+
+		
+		
+	}
+}

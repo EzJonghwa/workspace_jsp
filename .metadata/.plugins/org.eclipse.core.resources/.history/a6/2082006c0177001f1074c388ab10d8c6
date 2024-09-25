@@ -1,0 +1,38 @@
+<%@page import="jdbc.UserVO" %>
+<%@page import="jdbc.UserService" %>
+<%@page import="java.io.PrintWriter" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	UserService service = UserService.getInstance();
+	UserVO vo = service.loginUser(request.getParameter("userId")
+								,request.getParameter("userPw"));
+	System.out.println(vo);
+	PrintWriter script = response.getWriter();
+	script.println("<script>");
+	if(vo !=null){
+		/*todo 세션 등록 처리*/
+		script.println("'"+vo.getUserNm()+"님 환영합니다! '; ");
+		script.println("location.href='main.jsp'");
+		
+	}else{
+		script.println("alert('아이디 비밀번호를 확인하세여')");
+		script.println("history.back();"); //뒤로가기
+		
+	}
+	script.println("</script>");
+
+
+%>
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 처리</title>
+</head>
+<body>
+
+</body>
+</html>
